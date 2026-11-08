@@ -4,7 +4,7 @@
   "name": "Dim",
   "version": "1.1.0",
   "author": "Yogesh",
-  "description": "Toggle a full-screen black overlay and configure its strength",
+  "description": "Dim every display in Omarchy with an adjustable black overlay, bar controls, and a CLI. Run this installer script after adding the plugin for full install : \"$HOME/.config/omarchy/plugins/oma.dim/install\".",
   "kinds": [
     "service"
   ],
