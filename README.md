@@ -11,7 +11,7 @@ Click the preview to open the video player.
 Run **both commands**. Omarchy's first command adds only `oma.dim`; the second installs the CLI and both companion widgets, then enables the complete set:
 
 ```sh
-omarchy plugin add https://github.com/yogeshsuryag/dim.git
+omarchy plugin add https://github.com/yogeshsuryag/oma.dim.git
 "$HOME/.config/omarchy/plugins/oma.dim/install"
 ```
 

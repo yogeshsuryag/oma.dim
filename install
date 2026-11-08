@@ -20,7 +20,7 @@ done
 
 root_plugin="$HOME/.config/omarchy/plugins/oma.dim"
 if [[ ! -f "$root_plugin/manifest.json" ]] || [[ $(jq -r '.id' "$root_plugin/manifest.json") != oma.dim ]]; then
-  echo 'First install the root plugin: omarchy plugin add https://github.com/yogeshsuryag/dim.git' >&2
+  echo 'First install the root plugin: omarchy plugin add https://github.com/yogeshsuryag/oma.dim.git' >&2
   exit 1
 fi
 

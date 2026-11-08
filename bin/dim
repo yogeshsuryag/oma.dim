@@ -77,7 +77,7 @@ enable() {
   local current id
   current=$(omarchy plugin list --json) || fail 'could not read Omarchy plugins'
   for id in "${plugins[@]}"; do
-    jq -e --arg id "$id" 'any(.[]; .id == $id)' <<<"$current" >/dev/null || fail "plugin '$id' is missing; install Dim with: omarchy plugin add https://github.com/yogeshsuryag/dim.git"
+    jq -e --arg id "$id" 'any(.[]; .id == $id)' <<<"$current" >/dev/null || fail "plugin '$id' is missing; install Dim with: omarchy plugin add https://github.com/yogeshsuryag/oma.dim.git"
   done
   for id in "${plugins[@]}"; do
     if ! jq -e --arg id "$id" 'any(.[]; .id == $id and .enabled == true)' <<<"$current" >/dev/null; then
